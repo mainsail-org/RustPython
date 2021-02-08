@@ -15,8 +15,9 @@ jobs:
       - name: collect what is left data
         run: |
           chmod +x ./whats_left.sh
-          ./whats_left.sh
           ./whats_left.sh > whats_left.temp
+          ls
+          cat ./whats_left.temp
         env:
           RUSTPYTHONPATH: ${{ github.workspace }}/Lib
       - name: upload data to the website
