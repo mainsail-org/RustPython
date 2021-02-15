@@ -29,7 +29,7 @@ jobs:
           chmod 600 ~/github_key
           export GIT_SSH_COMMAND="ssh -i ~/github_key"
 
-          git clone git@github.com:RustPython/rustpython.github.io.git website
+          git clone git@github.com:mainsail-org/rustpython.github.io.git website
           cd website
           [ -f ./_data/whats_left.temp ] && cp ./_data/whats_left.temp ./_data/whats_left_lastrun.temp
           cp ../whats_left.temp ./_data/whats_left.temp
