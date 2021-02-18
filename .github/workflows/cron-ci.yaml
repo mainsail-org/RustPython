@@ -35,5 +35,5 @@ jobs:
           cp ../whats_left.temp ./_data/whats_left.temp
           git add ./_data/whats_left_lastrun.temp
           git add ./_data/whats_left.temp
-          git -c user.name="Github Actions" -c user.email="actions@github.com" commit -m "Update regression test results" --author="$GITHUB_ACTOR"
+          git -c user.name="Github Actions" -c user.email="actions@github.com" commit -m "Update what is left results" --author="$GITHUB_ACTOR"
           git push
